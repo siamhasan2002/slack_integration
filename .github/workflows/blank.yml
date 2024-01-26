@@ -36,4 +36,6 @@ jobs:
           echo test, and deploy your project.
       - name: Trigger notification
         run: |
-          curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/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
+          curl -X POST https://hooks.slack.com/services/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 \ 
+          -H 'Content-type: application/json' \
+          --data '{"text":"Hello, World!"}' 
